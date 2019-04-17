@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-button (click)="navToConducteurCarte()"> Conducteur </ion-button>
+</ion-header>
+
+<form #form="ngForm" (ngSubmit)="logForm(form)">
+<ion-item>
+  <ion-input name="Départ" type="text" placeholder="Départ" ngModel required></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-input name="Arrivée" type="text" placeholder="Arrivée" ngModel required></ion-input>
+</ion-item>
+</form>
+

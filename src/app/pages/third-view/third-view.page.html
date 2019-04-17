@@ -1,0 +1,14 @@
+<ion-button (click)="navToSecondPage()"> back </ion-button>
+
+<ion-label>Ajoutez votre numéro de téléphone</ion-label>
+  <form #form="ngForm" (ngSubmit)="logForm(form)">
+      <ion-item>
+          <ion-input name="Country" placeholder="Pays" type="text" ngModel required></ion-input>
+      </ion-item>
+            
+      <ion-item>
+        <ion-input name="Phone" placeholder="Numéro de téléphone" type="number" ngModel required></ion-input>
+      </ion-item>
+      
+    <ion-button type="submit" (click)="navToFourthPage()"> Continuer </ion-button>
+  </form>

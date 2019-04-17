@@ -1,0 +1,26 @@
+<ion-button (click)="navToFirstPage()">back</ion-button>
+
+
+<ion-label>Informations profil</ion-label>
+  <form #form="ngForm" (ngSubmit)="logForm(form)">
+      <ion-item>
+          <ion-input name="Prénom" placeholder="Prénom" type="text" ngModel required></ion-input>
+      </ion-item>
+            
+      <ion-item>
+        <ion-input name="Nom" placeholder="Nom" type="text" ngModel required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input name="birth" placeholder="Date de naissance" type="number" ngModel required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input name="gender" placeholder="Genre" type="text" ngModel required></ion-input>
+      </ion-item>
+      
+    <ion-button type="submit" (click)="navToThirdPage()"> Continuer </ion-button>
+  </form>
+  
+
+

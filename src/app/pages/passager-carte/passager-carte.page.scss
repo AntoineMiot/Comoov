@@ -1,0 +1,42 @@
+.bg {
+    background-image: url("../../../assets/img/background3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    position:absolute;
+    top: 10%;
+    right:10%;
+}
+
+input[type=text] {
+    background-color: white;
+    border: none;
+    border: none;
+    border-radius : 37px;
+    -moz-border-radius : 37px;
+    -webkit-border-radius : 37px;
+    padding: 10px 40px;
+}
+
+input[id=Départ] {
+    position:absolute;
+    top:78%;
+    left:18%;
+}
+
+input[id=Arrivée] {
+    position: absolute;
+    top:87%;
+    left:18%;
+}
+
+img {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    width: 5%;
+}

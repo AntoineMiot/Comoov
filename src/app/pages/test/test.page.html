@@ -1,0 +1,108 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 1366px; /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+button {
+    position:static;
+    top: 80%;
+    left:30%;
+    background-color: #ff3a00;
+    color: white;
+    border-radius : 37px;
+    -moz-border-radius : 37px;
+    -webkit-border-radius : 37px;
+    padding: 14px 40px;
+}
+
+input[type=email] {
+    position: absolute;
+    top: 200px;
+    left: 65px;
+    background-color: white;
+    border: none;
+    border-radius : 37px;
+    -moz-border-radius : 37px;
+    -webkit-border-radius : 37px;
+    padding: 14px 40px;
+}
+
+input[type=password] {
+    position: absolute;
+    top: 270px;
+    left: 65px;
+    background-color: white;
+    border: none;
+    border-radius : 37px;
+    -moz-border-radius : 37px;
+    -webkit-border-radius : 37px;
+    padding: 14px 40px;
+}
+
+.Text {
+    position: absolute;
+    top: 100px;
+    left: 65px;
+    color: white
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column middle" style="background-color:#bbb;">
+
+    <h2 class="Text"> Créer un compte</h2>
+    <form action="/action_page.php">
+    
+      <div>
+        <input type="email" placeholder="Adresse email">
+      </div>
+    
+      <div>
+        <input type="password" placeholder="Mot de passe"> 
+      </div>
+    
+      <button type="submit" (click)="navToSecondView()"> Continuer</button>
+    
+    </form>
+
+  </div>
+  <div class="column right" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+</body>
+</html>

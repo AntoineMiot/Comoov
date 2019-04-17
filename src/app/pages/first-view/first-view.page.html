@@ -1,0 +1,33 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+
+<body>
+  <ion-row justify-content-center class="FirstRow">
+    <ion-col align-self-center>
+        <div text-center class="header">Créer un compte</div>
+    </ion-col>
+  </ion-row>
+
+<ion-row justify-content-center>
+  <ion-col align-self-center>
+  <form #form="ngForm" (ngSubmit)="logForm(form)">
+      <ion-item>
+          <ion-input name="AdresseMail" placeholder="Adresse email" type="email" ngModel required></ion-input>
+      </ion-item>
+    <br>
+      <ion-item>
+        <ion-input name="Password" placeholder="Mot de passe" type="password" ngModel required></ion-input>
+      </ion-item> 
+      <ion-button type="submit" (click)="navToSecondPage()"> Continuer </ion-button>
+  </form>
+  </ion-col>
+</ion-row>
+</body>
+
+
+
+
+
+
+
